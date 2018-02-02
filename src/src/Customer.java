@@ -21,6 +21,32 @@ public class Customer
     public Customer()
     {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     // creates Customer Object
