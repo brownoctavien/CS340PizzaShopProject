@@ -2,8 +2,8 @@ public class OrderInfo extends Customer
 {
 
     // creating variables
-    int orderID = 1;
-    int typeID = 0;
+    int orderID = 10000;
+    int typeID = 10000;
 
     // default constructor
     public OrderInfo()
@@ -14,16 +14,17 @@ public class OrderInfo extends Customer
     // constructor for creating Order object
     public OrderInfo(int orderID, int typeID)
     {
-        this.orderID = orderID;
-        this.typeID = typeID;
+        this.orderID = getOrderID();
+        this.typeID = getTypeID();
     }
 
     // method for random orderID numbers
     public void makeOrderID()
     {
-        int ID = 1213;
-        ID = (int)((int) ID * Math.random());
-        setOrderID(ID);
+        int id = orderID;
+        id = (int) ((int) this.getOrderID() * 1.314234);
+        id =  (int) (Math.random() * id);
+        setOrderID(id);
     }
 
 
@@ -48,25 +49,6 @@ public class OrderInfo extends Customer
     {
         return typeID;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -6,46 +6,26 @@ public class Customer
         customer.makeID();
         System.out.println(customer.getID());
         OrderInfo order = new OrderInfo();
+        order.makeOrderID();
+        order.setTypeID(324324);
         System.out.println(order.getTypeID());
+        System.out.println(order.getOrderID());
+        customer.setName("Matt Harrington");
+        System.out.println(customer.getName());
+
 
     } // end of main method for testing
 
     // variables
-    String name;
-    String address;
+    String name = "";
+    String address = "";
     int ID = 1000000;
-    int order = 0;
+    int orderID = 0;
     int phone = 0;
 
     // default constructor
     public Customer()
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
@@ -57,6 +37,7 @@ public class Customer
         this.name = name;
         this.address = address;
         this.phone = phone;
+
 
     }
 
@@ -87,10 +68,10 @@ public class Customer
         this.ID = ID;
     }
 
-    public void setOrder(int order)
+   /* public void setOrder(int orderID)
     {
-        this.order = order;
-    }
+        this.orderID = orderID;
+    }*/
 
     public void setPhone(int phone)
     {
@@ -102,6 +83,7 @@ public class Customer
     {
         return name;
     }
+
     public String getAddress()
     {
         return address;
@@ -112,10 +94,10 @@ public class Customer
         return ID;
     }
 
-    public int getOrder()
+    /*public int getOrder()
     {
         return order;
-    }
+    }*/
 
     public int getPhone()
     {
@@ -123,3 +105,4 @@ public class Customer
     }
 
 } // end of customer class
+
