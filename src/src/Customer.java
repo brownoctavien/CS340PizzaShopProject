@@ -2,14 +2,19 @@ public class Customer
 {
     public static void main (String args[])
     {
+        // creating customer object
         Customer customer = new Customer();
         customer.makeID();
         System.out.println(customer.getID());
+
+        // creating order object
         OrderInfo order = new OrderInfo();
         order.makeOrderID();
         order.setTypeID(324324);
         System.out.println(order.getTypeID());
         System.out.println(order.getOrderID());
+
+        // setting customer name
         customer.setName("Matt Harrington");
         System.out.println(customer.getName());
 

@@ -16,29 +16,4 @@ public class TakeOut extends OrderInfo
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+} // end TakeOut class
