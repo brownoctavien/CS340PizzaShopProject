@@ -18,6 +18,10 @@ public class Customer
         customer.setName("Matt Harrington");
         System.out.println(customer.getName());
 
+        // testing cash payment method
+        Cash cash = new Cash();
+        cash.cashPayment(25.00);
+        System.out.println(cash.getAmount());
 
     } // end of main method for testing
 
