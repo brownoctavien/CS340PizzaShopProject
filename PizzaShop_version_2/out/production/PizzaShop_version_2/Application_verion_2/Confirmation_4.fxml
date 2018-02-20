@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.ConfirmationController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="36.0" layoutY="21.0" prefHeight="270.0" prefWidth="529.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="181.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="147.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="confirmation_btn" mnemonicParsing="false" text="Confirm" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <VBox prefHeight="208.0" prefWidth="176.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Customer Name:" />
+                  <TextField fx:id="name_txt" editable="false" />
+                  <Label text="Total Amount Paid:" />
+                  <TextField fx:id="amountPaid_txt" editable="false" />
+                  <Label text="Pizza Ordered:" />
+                  <TextField fx:id="pizzaOrder_txt" editable="false" />
+               </children>
+            </VBox>
+            <Label text="Confirmation" GridPane.columnIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="mainMenu_btn" layoutX="363.0" layoutY="251.0" mnemonicParsing="false" onAction="#gotoMain" text="Main Menu" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

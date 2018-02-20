@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.PaymentController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="319.0" prefWidth="419.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="amountPaid_txt" promptText="\$ Amount Paid" GridPane.rowIndex="2" />
+             <ComboBox fx:id="paymentType_cbox" prefWidth="150.0" promptText="Payment Type" GridPane.rowIndex="1">
+                 <items>
+                     <FXCollections fx:factory="observableArrayList">
+                         <String fx:value="Credit Card" />
+                         <String fx:value="Debit Card" />
+                     </FXCollections>
+                 </items>
+             </ComboBox>
+            <Label prefHeight="40.0" prefWidth="97.0" text="Payment">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="next_btn" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="70.0" text="Next" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="back_btn" layoutX="220.0" layoutY="277.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="70.0" text="Back" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1103.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application_verion_2.AssignorderController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="340.0" prefWidth="285.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="name_txt" prefHeight="20.0" prefWidth="200.0" promptText="Cusomer  Name" />
+               </children>
+            </HBox>
+            <ComboBox fx:id="pizzaSize_cbox" prefHeight="30.0" prefWidth="200.0" promptText="Pizza Size">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Large" />
+                     <String fx:value="Meduim" />
+                     <String fx:value="Small" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="topping_cbox" layoutX="235.0" layoutY="198.0" prefHeight="30.0" prefWidth="200.0" promptText="Toppings">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Pepperoni" />
+                     <String fx:value="Cheese" />
+                     <String fx:value="Meat Lover" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="saleType_cbox" layoutX="235.0" layoutY="210.0" prefHeight="30.0" prefWidth="200.0" promptText="Sale Type">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Delievery" />
+                     <String fx:value="Take Out" />
+                     <String fx:value="In House" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="100.0" text="Back" />
+                  <TextField fx:id="qantity_txt" promptText="Qantity" />
+                  <Button mnemonicParsing="false" onAction="#next" prefHeight="50.0" prefWidth="100.0" text="Next" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="100.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <VBox alignment="CENTER" prefHeight="136.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Title_lbl" text="Assign Order" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+   </top>
+</BorderPane>
